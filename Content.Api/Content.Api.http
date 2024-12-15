@@ -1,0 +1,6 @@
+@Content.Api = http://localhost:5001
+
+GET {{Content.Api}}/api/content/
+Accept: application/json
+
+###

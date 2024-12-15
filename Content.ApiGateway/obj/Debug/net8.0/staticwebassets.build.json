@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "BzjCMS95vXileTYstCZMLhUajClRAKGjyPbzKFrLClE=",
+  "Source": "Content.ApiGateway",
+  "BasePath": "_content/Content.ApiGateway",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

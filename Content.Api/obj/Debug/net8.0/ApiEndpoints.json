@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "APIGatewayEx_ClientConsumer.Controllers.ContentController",
+    "Method": "GetAll",
+    "RelativePath": "api/Content",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

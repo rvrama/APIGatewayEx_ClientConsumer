@@ -1,0 +1,34 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/content",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/cms/content",
+      "UpstreamHttpMethod": [ "GET" ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "2m",
+        "PeriodTimespan": 2,
+        "Limit": 2
+      },
+      "FileCacheOptions": {
+        "TtlSeconds": 300
+      }
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5151",
+    "RateLimitOptions": {
+      "HttpStatusCode": 429,
+      "ClientIdHeader": "ClientId1",  //this is not working yet
+      "QuotaExceededMessage": "Too many requests. Please try again later."
+    }
+  }
+}
